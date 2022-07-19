@@ -10,7 +10,9 @@ module.exports = {
         "highlight-light": "#FFDD00",
       },
       backgroundImage: {
-        "head-panel": "url('/src/img/img_parallax.jpg')",
+        "head-panel": "url('/src/img/head_panel.jpg')",
+        "content-panel": "url('/src/img/content_panel.jpg')",
+        "links-panel": "url('/src/img/links_panel.jpg')",
       },
     },
   },
