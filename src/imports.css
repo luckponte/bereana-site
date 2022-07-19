@@ -4,6 +4,6 @@
 
 @layer components {
     .panel {
-        @apply p-4 md:p-8 w-full h-96
+        @apply p-4 md:p-8 w-full h-screen
     }
 }

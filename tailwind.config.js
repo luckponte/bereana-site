@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-dark': '#0D4A7C',
-        'main-light': '#026CB6',
-        'highlight-dark': '#F8981D',
-        'highlight-light': '#FFDD00',
+        "main-dark": "#0D4A7C",
+        "main-light": "#026CB6",
+        "highlight-dark": "#F8981D",
+        "highlight-light": "#FFDD00",
+      },
+      backgroundImage: {
+        "head-panel": "url('/src/img/img_parallax.jpg')",
       },
     },
   },
   plugins: [],
-}
+};
