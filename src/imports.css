@@ -4,7 +4,7 @@
 
 @layer components {
   .panel {
-    @apply p-4 md:p-8 w-full h-screen flex flex-col justify-evenly;
+    @apply p-4 md:p-8 w-full h-screen flex flex-col justify-evenly lg:flex-row;
   }
 
   .img-bg {

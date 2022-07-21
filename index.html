@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/dist/main.css" />
   </head>
   <body>
+    <!-- MENU -->
     <nav
       class="fixed border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 w-full"
     >
@@ -92,23 +93,29 @@
 
     <!-- HEAD -->
     <div
-      class="panel bg-main-dark bg-head-panel img-bg items-center text-sky-100"
+      class="panel bg-main-dark bg-head-panel img-bg items-center text-sky-100 lg:flex-row-reverse"
       id="header"
     >
       <div
-        class="rounded-full h-72 w-72 border border-solid border-sky-100 flex items-center justify-center p-6"
+        class="rounded-full h-72 w-72 border border-solid border-sky-100 flex items-center justify-center p-6 lg:p-16 lg:h-[36rem] lg:w-[36rem]"
       >
         <img src="/src/img/logo-bereana.png" alt="Logo" />
       </div>
 
-      <div>
-        <h1 class="text-center text-4xl font-bold uppercase">
-          Andar com Jesus é uma aventura
+      <div class="lg:flex lg:flex-col lg:justify-around lg:items-center lg:h-full">
+        <h1 class="hidden lg:block text-7xl uppercase text-center font-bold">
+          Igreja Apostólica Bereana
         </h1>
 
-        <p class="text-center mt-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
+        <div>
+          <h1 class="text-center text-4xl lg:text-5xl font-bold uppercase lg:text-highlight-dark">
+            Andar com Jesus é uma aventura
+          </h1>
+  
+          <p class="text-center mt-4 lg:text-2xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
       </div>
     </div>
     <!-- ABOUT -->
@@ -278,7 +285,7 @@
     </div>
     <!-- LINKS -->
     <div
-      class="panel bg-main-light bg-links-panel img-bg items-center"
+      class="panel bg-main-light bg-links-panel img-bg items-center lg:h-96"
       id="links"
     >
       <h1 class="text-center text-sky-100 text-3xl font-bold uppercase">
@@ -362,7 +369,5 @@
         </a>
       </div>
     </div>
-
-    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
   </body>
 </html>
