@@ -23,11 +23,3 @@ document.querySelectorAll(".menu-option").forEach((el) => {
     mobileMenu.classList.add("hidden");
   });
 });
-
-if (!/Android/i.test(navigator.userAgent)) {
-  androidLink.remove();
-}
-
-if (!/iPhone/i.test(navigator.userAgent)) {
-  appleLink.remove();
-}
