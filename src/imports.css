@@ -10,4 +10,9 @@
   .img-bg {
     @apply bg-center bg-no-repeat bg-cover bg-blend-multiply lg:bg-fixed;
   }
+
+  @font-face {
+    font-family: "Abadi";
+    src: url("../src/fonts/abadi/AbadiMTStd.otf");
+  }
 }

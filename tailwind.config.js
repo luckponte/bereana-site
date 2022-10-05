@@ -3,11 +3,14 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        abadi: ["abadi"],
+      },
       width: {
-        "22": "5.5rem"
+        22: "5.5rem",
       },
       height: {
-        "22": "5.5rem"
+        22: "5.5rem",
       },
       colors: {
         "main-dark": "#0D4A7C",
@@ -21,7 +24,7 @@ module.exports = {
         "links-panel": "url('/src/img/links_panel.jpg')",
       },
       boxShadow: {
-        "logo": "0 0 1rem 0.25rem #FFF",
+        logo: "0 0 1rem 0.25rem #FFF",
       },
     },
   },
