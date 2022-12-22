@@ -22,6 +22,7 @@ module.exports = {
         "head-panel": "url('/src/img/head_panel.jpg')",
         "content-panel": "url('/src/img/content_panel.jpg')",
         "links-panel": "url('/src/img/links_panel.jpg')",
+        "contact-panel": "url('/src/img/contact_panel.jpg')",
       },
       boxShadow: {
         logo: "0 0 1rem 0.25rem #FFF",
