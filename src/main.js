@@ -1,4 +1,7 @@
-import '../node_modules/tw-elements/dist/js/index.min.js';
+document.querySelector("#know-jesus").addEventListener("click", (e) => {
+  console.log('Tem um minuto para ouvir a palavra do Senhor?');
+  document.querySelector("#content-trigger-jesus").click();
+});
 
 // control mobile menu functions
 let menuOpen = false;
