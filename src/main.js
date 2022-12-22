@@ -3,8 +3,6 @@ import '../node_modules/tw-elements/dist/js/index.min.js';
 // control mobile menu functions
 let menuOpen = false;
 const mobileMenu = document.querySelector("#navbar-default");
-const androidLink = document.querySelector("#android-link");
-const appleLink = document.querySelector("#apple-link");
 
 document.querySelector("#burger-menu").addEventListener("click", (e) => {
   menuOpen = !menuOpen;
