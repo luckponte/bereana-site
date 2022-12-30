@@ -1,129 +1,182 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Igreja Apostólica Bereana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/dist/main.css" />
+    <style>
+      .eKtxHt {
+        background-color: transparent !important;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Igreja Apostólica Bereana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="/dist/main.css" />
-  <style>
-    .vrLWh {
-      background-color: transparent !important;
-    }
-  </style>
-</head>
+  <body class="font-abadi">
+    <!-- MENU -->
+    <nav
+      class="fixed -top-4 pt-6 border-gray-200 px-2 sm:px-4 py-2.5 bg-gray-900 lg:bg-opacity-70 w-full z-10"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#home" class="flex items-center">
+          <div
+            class="bg-main-light rounded-full p-1 h-16 w-16 lg:w-22 lg:h-22 flex items-center justify-center hover:lg:bg-main-light/75 transition-colors duration-300"
+          >
+            <img src="/src/img/logo-bereana-simbolo.png" alt="Logo" />
+          </div>
+        </a>
 
-<body class="font-abadi">
-  <!-- MENU -->
-  <nav class="fixed -top-4 pt-6 border-gray-200 px-2 sm:px-4 py-2.5 bg-gray-900 lg:bg-opacity-70 w-full z-10">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#home" class="flex items-center">
-        <div
-          class="bg-main-light rounded-full p-1 h-16 w-16 lg:w-22 lg:h-22 flex items-center justify-center hover:lg:bg-main-light/75 transition-colors duration-300">
-          <img src="/src/img/logo-bereana-simbolo.png" alt="Logo" />
+        <button
+          id="burger-menu"
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium text-sky-100"
+          >
+            <li>
+              <a
+                href="#home"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b md:bg-transparent border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >Sobre Nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="#content"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >O Que Fazemos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#map"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >Onde Estamos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a
+                href="#history"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >História</a
+              >
+            </li>
+            <li>
+              <a
+                href="#links"
+                class="menu-option block py-4 pr-4 pl-3 active:text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300"
+                >Links</a
+              >
+            </li>
+          </ul>
         </div>
-      </a>
-
-      <button id="burger-menu" data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium text-sky-100">
-          <li>
-            <a href="#home"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b md:bg-transparent border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">Home</a>
-          </li>
-          <li>
-            <a href="#about"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">Sobre
-              Nós</a>
-          </li>
-          <li>
-            <a href="#content"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">O
-              Que Fazemos</a>
-          </li>
-          <li>
-            <a href="#map"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">Onde
-              Estamos</a>
-          </li>
-          <li>
-            <a href="#contact"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">Contato</a>
-          </li>
-          <li>
-            <a href="#history"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">História</a>
-          </li>
-          <li>
-            <a href="#links"
-              class="menu-option block py-4 pr-4 pl-3 active:text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-main-light md:p-0 md:text-xl transition-colors duration-300">Links</a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- HOME -->
-  <div class="panel bg-main-dark bg-head-panel img-bg items-center text-sky-50 lg:flex-row-reverse" id="home">
-    <div class="h-72 w-72 lg:h-[36rem] lg:w-[36rem]">
-      <img src="/src/img/logo_igreja_bereana_branco.png" alt="Logo" />
-    </div>
+    <!-- HOME -->
+    <div
+      class="panel bg-main-dark bg-head-panel img-bg items-center text-sky-50 lg:flex-row-reverse"
+      id="home"
+    >
+      <div class="h-72 w-72 lg:h-[36rem] lg:w-[36rem]">
+        <img src="/src/img/logo_igreja_bereana_branco.png" alt="Logo" />
+      </div>
 
-    <div class="lg:flex lg:flex-col lg:justify-around lg:items-center lg:h-full">
-      <h1 class="hidden lg:block text-7xl uppercase text-center font-bold">
-        Igreja Apostólica Bereana
-      </h1>
-
-      <div>
-        <h1 class="text-center text-4xl lg:text-5xl font-bold uppercase lg:text-highlight-dark">
-          Andar com Jesus é uma aventura
+      <div
+        class="lg:flex lg:flex-col lg:justify-around lg:items-center lg:h-full"
+      >
+        <h1 class="hidden lg:block text-7xl uppercase text-center font-bold">
+          Igreja Apostólica Bereana
         </h1>
 
-        <p
-          class="text-center mt-4 lg:text-4xl cursor-pointer md:hover:text-highlight-light transition-colors duration-300">
-          <a href="#content" id="know-jesus">
-            Conheça Jesus
-          </a>
-        </p>
+        <div>
+          <h1
+            class="text-center text-4xl lg:text-5xl font-bold uppercase lg:text-highlight-dark"
+          >
+            Andar com Jesus é uma aventura
+          </h1>
+
+          <p
+            class="text-center mt-4 lg:text-4xl cursor-pointer underline md:hover:text-highlight-light transition-colors duration-300"
+          >
+            <a href="#content" id="know-jesus"> Conheça Jesus </a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ABOUT -->
-  <div class="panel bg-sky-50 lg:h-auto lg:py-32 text-main-dark lg:items-center" id="about">
-    <h1 class="text-center text-3xl font-bold uppercase lg:text-justify mb-32">
-      Quem Somos
-    </h1>
+    <!-- ABOUT -->
+    <div
+      class="panel bg-sky-50 h-auto lg:py-32 text-main-dark lg:items-center"
+      id="about"
+    >
+      <h1
+        class="text-center text-3xl font-bold uppercase lg:text-justify lg:mb-32"
+      >
+        Quem Somos
+      </h1>
 
-    <div class="flex lg:flex-row lg:items-center lg:w-full justify-evenly">
-      <div class="flex flex-col justify-evenly items-center h-full lg:h-auto">
-        <p class="text-center lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-          Somos uma família. Uma Igreja bíblica cujo objetivo é abençoar o
-          maior número de pessoas, em todo lugar possível, usando três
-          princípios básicos: Conectar + Crescer + Cooperar.
-        </p>
+      <div class="flex lg:flex-row lg:items-start lg:w-full justify-evenly">
+        <div class="flex flex-col justify-evenly items-center h-full lg:h-auto">
+          <p
+            class="text-center lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify lg:px-4"
+          >
+            Somos uma família. Uma Igreja bíblica cujo objetivo é abençoar o
+            maior número de pessoas, em todo lugar possível, usando três
+            princípios básicos: Conectar + Crescer + Cooperar.
+          </p>
 
-        <div class="">
-          <!-- CONECTAR -->
-          <div class="flex items-center lg:max-w-prose lg:mb-2">
-            <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
-              <svg viewBox="0 0 503.2 503.2" style="enable-background: new 0 0 503.2 503.2" xml:space="preserve"
-                class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32">
-                <g>
-                  <path
-                    d="M404.601,299.199c-26.105,0-49.776,10.221-67.415,26.785L272.001,277.1v-74.664c46.335-8.071,81.6-48.389,81.6-97.036
+          <div class="">
+            <!-- CONECTAR -->
+            <div class="flex items-center lg:max-w-prose lg:mb-2">
+              <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
+                <svg
+                  viewBox="0 0 503.2 503.2"
+                  style="enable-background: new 0 0 503.2 503.2"
+                  xml:space="preserve"
+                  class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32"
+                >
+                  <g>
+                    <path
+                      d="M404.601,299.199c-26.105,0-49.776,10.221-67.415,26.785L272.001,277.1v-74.664c46.335-8.071,81.6-48.389,81.6-97.036
           c0-54.454-44.146-98.6-98.6-98.6c-54.455,0-98.601,44.146-98.601,98.6c0,48.647,35.265,88.965,81.6,97.036v74.439l-70.101,50.286
           c-12.886-12.642-29.267-21.732-47.58-25.643C52.014,286.939-7.69,343.168,0.81,410.617c5.536,43.949,41.024,79.432,84.973,84.974
           c67.449,8.5,123.678-51.204,109.099-119.518c-1.584-7.432-4.06-14.531-7.242-21.229l67.137-48.164l61.981,46.484
@@ -135,27 +188,35 @@
           C225.312,54.101,238.606,40.813,255.001,40.813z M210.801,156.399v-13.328c0-18.217,12.784-34.272,31.008-34.272h26.391
           c18.218,0,31.001,16.055,31.001,34.272v13.328H210.801z M404.601,333.213c16.395,0,29.688,13.294,29.688,29.689
           c0,16.395-13.294,29.688-29.688,29.688s-29.688-13.294-29.688-29.688C374.912,346.5,388.206,333.213,404.601,333.213z
-           M448.801,448.8h-88.4v-13.328c0-18.217,12.784-34.272,31.008-34.272H417.8c18.217,0,31.001,16.056,31.001,34.272V448.8z" />
-                </g>
-              </svg>
-              <p class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl">
-                Conectar
+           M448.801,448.8h-88.4v-13.328c0-18.217,12.784-34.272,31.008-34.272H417.8c18.217,0,31.001,16.056,31.001,34.272V448.8z"
+                    />
+                  </g>
+                </svg>
+                <p
+                  class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl"
+                >
+                  Conectar
+                </p>
+              </div>
+
+              <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
+                Conectar pessoas a Deus e umas às outras, buscando a
+                manifestação do Reino de Deus na Terra.
               </p>
             </div>
 
-            <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
-              Conectar pessoas a Deus e umas às outras, buscando a
-              manifestação do Reino de Deus na Terra.
-            </p>
-          </div>
-
-          <!-- CRESCER -->
-          <div class="flex items-center lg:max-w-prose lg:mb-2">
-            <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
-              <svg viewBox="0 0 312.693 312.693" style="enable-background: new 0 0 312.693 312.693" xml:space="preserve"
-                class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32">
-                <g>
-                  <path d="M113.461,149.395c6.324,0,12.536,1.107,18.473,3.291l46.82,17.201c16.209,5.957,24.554,23.998,18.596,40.248
+            <!-- CRESCER -->
+            <div class="flex items-center lg:max-w-prose lg:mb-2">
+              <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
+                <svg
+                  viewBox="0 0 312.693 312.693"
+                  style="enable-background: new 0 0 312.693 312.693"
+                  xml:space="preserve"
+                  class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32"
+                >
+                  <g>
+                    <path
+                      d="M113.461,149.395c6.324,0,12.536,1.107,18.473,3.291l46.82,17.201c16.209,5.957,24.554,23.998,18.596,40.248
           c-4.52,12.234-16.32,20.456-29.377,20.456c-4.662,0-6.786-0.808-13.129-2.244c11.545,7.674,12.231,8.745,14.628,7.757
           l96.078-40.256c-2.274-7.768-9.374-13.48-17.882-13.48h-6.293c0.061-0.674,0.244-1.321,0.244-2.015
           c0-14.622-13.831-26.486-31.386-27.694c-1.452-11.426-11.21-20.772-23.849-20.304c16.4-31.334,44.019-23.986,59.194-65.924
@@ -165,205 +226,341 @@
           c-4.531,2.947-17.047,14.182-21.738,27.025c-5.304-7.491-14.035-12.602-24.133-13.388c0-46.312-33.397-67.144-42.898-94.21
           c-0.287-0.817-1.129-1.303-1.98-1.14c-0.852,0.162-1.456,0.924-1.422,1.79c1.445,36.73,33.661,39.548,33.661,94.85
           c-8.936,2.709-16.169,8.941-19.799,16.964c-2.765-0.698-5.61-1.173-8.59-1.173c-16.626,0-30.469,11.495-34.283,26.934
-          C96.886,152.013,102.246,149.395,113.461,149.395z" />
-                  <path d="M311.064,216.419c-3.355-8.008-11.128-12.822-19.289-12.822c-2.682,0-5.416,0.525-8.048,1.626L175.52,250.554
+          C96.886,152.013,102.246,149.395,113.461,149.395z"
+                    />
+                    <path
+                      d="M311.064,216.419c-3.355-8.008-11.128-12.822-19.289-12.822c-2.682,0-5.416,0.525-8.048,1.626L175.52,250.554
           c-6.088,2.553-12.89,1.778-18.156-1.724l-42.506-28.235c-3.193-2.116-4.641-6.063-3.569-9.741c1.297-4.448,5.827-7.12,10.343-6.095
           l41.577,9.42c1.582,0.505,3.184,0.745,4.765,0.745c6.364,0,12.342-3.887,14.678-10.217c2.979-8.125-1.185-17.126-9.303-20.11
           l-46.82-17.207c-8.171-3.009-17.229-3.126-25.593-0.194L6.273,200.362C2.52,201.678,0,205.228,0,209.212v67.946
           c0,5.182,4.202,9.379,9.375,9.379h39.608l100.902,13.628c1.918,0.26,3.847,0.388,5.764,0.388c5.702,0,11.364-1.132,16.646-3.352
-          l127.568-53.439C310.513,239.302,315.522,227.063,311.064,216.419z" />
-                </g>
-              </svg>
-              <p class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl">
-                Crescer
+          l127.568-53.439C310.513,239.302,315.522,227.063,311.064,216.419z"
+                    />
+                  </g>
+                </svg>
+                <p
+                  class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl"
+                >
+                  Crescer
+                </p>
+              </div>
+
+              <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
+                Levando-as a Crescer como pessoa, para que cumpram o propósito
+                de suas vidas de forma plena.
               </p>
             </div>
 
-            <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
-              Levando-as a Crescer como pessoa, para que cumpram o propósito
-              de suas vidas de forma plena.
-            </p>
-          </div>
+            <!-- COOPERAR -->
+            <div class="flex items-center lg:max-w-prose lg:mb-2">
+              <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
+                <svg
+                  viewBox="0 0 36 36"
+                  preserveAspectRatio="xMidYMid meet"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32"
+                >
+                  <title>users-solid</title>
+                  <path
+                    class="clr-i-solid clr-i-solid-path-1"
+                    d="M12,16.14q-.43,0-.87,0a8.67,8.67,0,0,0-6.43,2.52l-.24.28v8.28H8.54v-4.7l.55-.62.25-.29a11,11,0,0,1,4.71-2.86A6.59,6.59,0,0,1,12,16.14Z"
+                  ></path>
+                  <path
+                    class="clr-i-solid clr-i-solid-path-2"
+                    d="M31.34,18.63a8.67,8.67,0,0,0-6.43-2.52,10.47,10.47,0,0,0-1.09.06,6.59,6.59,0,0,1-2,2.45,10.91,10.91,0,0,1,5,3l.25.28.54.62v4.71h3.94V18.91Z"
+                  ></path>
+                  <path
+                    class="clr-i-solid clr-i-solid-path-3"
+                    d="M11.1,14.19c.11,0,.2,0,.31,0a6.45,6.45,0,0,1,3.11-6.29,4.09,4.09,0,1,0-3.42,6.33Z"
+                  ></path>
+                  <path
+                    class="clr-i-solid clr-i-solid-path-4"
+                    d="M24.43,13.44a6.54,6.54,0,0,1,0,.69,4.09,4.09,0,0,0,.58.05h.19A4.09,4.09,0,1,0,21.47,8,6.53,6.53,0,0,1,24.43,13.44Z"
+                  ></path>
+                  <circle
+                    class="clr-i-solid clr-i-solid-path-5"
+                    cx="17.87"
+                    cy="13.45"
+                    r="4.47"
+                  ></circle>
+                  <path
+                    class="clr-i-solid clr-i-solid-path-6"
+                    d="M18.11,20.3A9.69,9.69,0,0,0,11,23l-.25.28v6.33a1.57,1.57,0,0,0,1.6,1.54H23.84a1.57,1.57,0,0,0,1.6-1.54V23.3L25.2,23A9.58,9.58,0,0,0,18.11,20.3Z"
+                  ></path>
+                  <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+                </svg>
+                <p
+                  class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl"
+                >
+                  Cooperar
+                </p>
+              </div>
 
-          <!-- COOPERAR -->
-          <div class="flex items-center lg:max-w-prose lg:mb-2">
-            <div class="flex flex-col items-center p-2 w-28 mr-2 lg:mr-16">
-              <svg viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-highlight-dark h-16 w-16 lg:h-32 lg:w-32">
-                <title>users-solid</title>
-                <path class="clr-i-solid clr-i-solid-path-1"
-                  d="M12,16.14q-.43,0-.87,0a8.67,8.67,0,0,0-6.43,2.52l-.24.28v8.28H8.54v-4.7l.55-.62.25-.29a11,11,0,0,1,4.71-2.86A6.59,6.59,0,0,1,12,16.14Z">
-                </path>
-                <path class="clr-i-solid clr-i-solid-path-2"
-                  d="M31.34,18.63a8.67,8.67,0,0,0-6.43-2.52,10.47,10.47,0,0,0-1.09.06,6.59,6.59,0,0,1-2,2.45,10.91,10.91,0,0,1,5,3l.25.28.54.62v4.71h3.94V18.91Z">
-                </path>
-                <path class="clr-i-solid clr-i-solid-path-3"
-                  d="M11.1,14.19c.11,0,.2,0,.31,0a6.45,6.45,0,0,1,3.11-6.29,4.09,4.09,0,1,0-3.42,6.33Z"></path>
-                <path class="clr-i-solid clr-i-solid-path-4"
-                  d="M24.43,13.44a6.54,6.54,0,0,1,0,.69,4.09,4.09,0,0,0,.58.05h.19A4.09,4.09,0,1,0,21.47,8,6.53,6.53,0,0,1,24.43,13.44Z">
-                </path>
-                <circle class="clr-i-solid clr-i-solid-path-5" cx="17.87" cy="13.45" r="4.47"></circle>
-                <path class="clr-i-solid clr-i-solid-path-6"
-                  d="M18.11,20.3A9.69,9.69,0,0,0,11,23l-.25.28v6.33a1.57,1.57,0,0,0,1.6,1.54H23.84a1.57,1.57,0,0,0,1.6-1.54V23.3L25.2,23A9.58,9.58,0,0,0,18.11,20.3Z">
-                </path>
-                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
-              </svg>
-              <p class="text-highlight-dark text-center w-28 text-xl uppercase font-bold lg:text-2xl">
-                Cooperar
+              <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
+                Oferecendo oportunidades para que cada um possa cooperar com
+                Deus no que Ele está fazendo em nossa geração.
               </p>
             </div>
-
-            <p class="text-center lg:text-2xl lg:mb-8 lg:text-justify">
-              Oferecendo oportunidades para que cada um possa cooperar com
-              Deus no que Ele está fazendo em nossa geração.
-            </p>
           </div>
+
+          <p
+            class="text-center mt-8 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+          >
+            Deseja se conectar? Crescer de verdade? Ser um cooperador de Deus na
+            Terra? Venha nos conhecer.
+          </p>
+
+          <a
+            class="text-highlight-dark text-2xl font-bold uppercase underline text-center mt-8 lg:text-4xl lg:mb-8"
+            href="#history"
+            >Nossa história</a
+          >
         </div>
 
-        <p class="text-center mt-8 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-          Deseja se conectar? Crescer de verdade? Ser um cooperador de Deus na
-          Terra? Venha nos conhecer.
-        </p>
-
-        <a class="text-highlight-dark text-2xl font-bold uppercase underline text-center mt-8 lg:text-4xl lg:mb-8"
-          href="#history">Nossa história</a>
+        <div class="hidden lg:block w-2/5">
+          <div class="electricblaze-id-2Uhx7Yl"></div>
+        </div>
       </div>
 
-      <div class="hidden lg:block w-2/5">
-        <img src="/src/img/about_aux.jpg" alt="About" class="w-full rounded-md" />
+      <div class="lg:hidden block">
+        <div class="electricblaze-id-2Uhx7Yl"></div>
       </div>
     </div>
-  </div>
 
-  <!-- CONTENT -->
-  <div
-    class="panel bg-highlight-dark bg-content-panel img-bg text-sky-100 lg:items-center lg:min-h-screen lg:h-auto lg:py-16"
-    id="content">
-    <h1 class="text-center text-3xl font-bold uppercase lg:text-justify lg:mb-8">
-      O que fazemos
-    </h1>
+    <!-- CONTENT -->
+    <div
+      class="panel bg-highlight-dark bg-content-panel img-bg text-sky-100 lg:items-center lg:min-h-screen lg:h-auto lg:py-16"
+      id="content"
+    >
+      <h1
+        class="text-center text-3xl font-bold uppercase lg:text-justify lg:mb-8"
+      >
+        O que fazemos
+      </h1>
 
-    <div data-accordion="collapse" class="mx-auto w-2/3 bg-sky-50 rounded-md"
-      data-active-classes="bg-sky-50 text-main-light rounded-md" data-inactive-classes="text-main-dark">
-      <!-- Ramais -->
-      <h2 class="px-4" id="content-heading-ramais">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-ramais" aria-expanded="true" aria-controls="content-body-ramais">
-          <div class="flex items-center">
-            <svg viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" class="w-6 h-6 shrink-0 mr-4" fill="currentColor">
-              <title>users-solid</title>
-              <path class="clr-i-solid clr-i-solid-path-1"
-                d="M12,16.14q-.43,0-.87,0a8.67,8.67,0,0,0-6.43,2.52l-.24.28v8.28H8.54v-4.7l.55-.62.25-.29a11,11,0,0,1,4.71-2.86A6.59,6.59,0,0,1,12,16.14Z">
-              </path>
-              <path class="clr-i-solid clr-i-solid-path-2"
-                d="M31.34,18.63a8.67,8.67,0,0,0-6.43-2.52,10.47,10.47,0,0,0-1.09.06,6.59,6.59,0,0,1-2,2.45,10.91,10.91,0,0,1,5,3l.25.28.54.62v4.71h3.94V18.91Z">
-              </path>
-              <path class="clr-i-solid clr-i-solid-path-3"
-                d="M11.1,14.19c.11,0,.2,0,.31,0a6.45,6.45,0,0,1,3.11-6.29,4.09,4.09,0,1,0-3.42,6.33Z"></path>
-              <path class="clr-i-solid clr-i-solid-path-4"
-                d="M24.43,13.44a6.54,6.54,0,0,1,0,.69,4.09,4.09,0,0,0,.58.05h.19A4.09,4.09,0,1,0,21.47,8,6.53,6.53,0,0,1,24.43,13.44Z">
-              </path>
-              <circle class="clr-i-solid clr-i-solid-path-5" cx="17.87" cy="13.45" r="4.47"></circle>
-              <path class="clr-i-solid clr-i-solid-path-6"
-                d="M18.11,20.3A9.69,9.69,0,0,0,11,23l-.25.28v6.33a1.57,1.57,0,0,0,1.6,1.54H23.84a1.57,1.57,0,0,0,1.6-1.54V23.3L25.2,23A9.58,9.58,0,0,0,18.11,20.3Z">
-              </path>
-              <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
-            </svg>
-            Ramais
-          </div>
-          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-ramais" class="hidden px-4" aria-labelledby="content-heading-ramais">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <p class="text-main-dark">Com encontros semanais buscamos conectar pessoas - umas com
-            as outras e com Deus. Nosso propósito é edificação, comunhão e evangelismo.
-          </p>
-        </div>
-      </div>
-
-      <!-- Social -->
-      <h2 class="px-4" id="content-heading-social">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-social" aria-expanded="false" aria-controls="content-body-social">
-          <div class="flex items-center">
-            <svg class="w-6 h-6 shrink-0 mr-4" fill="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+      <div
+        data-accordion="collapse"
+        class="mx-auto w-2/3 bg-sky-50 rounded-md"
+        data-active-classes="bg-sky-50 text-main-light rounded-md"
+        data-inactive-classes="text-main-dark"
+      >
+        <!-- Ramais -->
+        <h2 class="px-4" id="content-heading-ramais">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-ramais"
+            aria-expanded="true"
+            aria-controls="content-body-ramais"
+          >
+            <div class="flex items-center">
+              <svg
+                viewBox="0 0 36 36"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="w-6 h-6 shrink-0 mr-4"
+                fill="currentColor"
+              >
+                <title>users-solid</title>
+                <path
+                  class="clr-i-solid clr-i-solid-path-1"
+                  d="M12,16.14q-.43,0-.87,0a8.67,8.67,0,0,0-6.43,2.52l-.24.28v8.28H8.54v-4.7l.55-.62.25-.29a11,11,0,0,1,4.71-2.86A6.59,6.59,0,0,1,12,16.14Z"
+                ></path>
+                <path
+                  class="clr-i-solid clr-i-solid-path-2"
+                  d="M31.34,18.63a8.67,8.67,0,0,0-6.43-2.52,10.47,10.47,0,0,0-1.09.06,6.59,6.59,0,0,1-2,2.45,10.91,10.91,0,0,1,5,3l.25.28.54.62v4.71h3.94V18.91Z"
+                ></path>
+                <path
+                  class="clr-i-solid clr-i-solid-path-3"
+                  d="M11.1,14.19c.11,0,.2,0,.31,0a6.45,6.45,0,0,1,3.11-6.29,4.09,4.09,0,1,0-3.42,6.33Z"
+                ></path>
+                <path
+                  class="clr-i-solid clr-i-solid-path-4"
+                  d="M24.43,13.44a6.54,6.54,0,0,1,0,.69,4.09,4.09,0,0,0,.58.05h.19A4.09,4.09,0,1,0,21.47,8,6.53,6.53,0,0,1,24.43,13.44Z"
+                ></path>
+                <circle
+                  class="clr-i-solid clr-i-solid-path-5"
+                  cx="17.87"
+                  cy="13.45"
+                  r="4.47"
+                ></circle>
+                <path
+                  class="clr-i-solid clr-i-solid-path-6"
+                  d="M18.11,20.3A9.69,9.69,0,0,0,11,23l-.25.28v6.33a1.57,1.57,0,0,0,1.6,1.54H23.84a1.57,1.57,0,0,0,1.6-1.54V23.3L25.2,23A9.58,9.58,0,0,0,18.11,20.3Z"
+                ></path>
+                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+              </svg>
+              Ramais
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z" />
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
             </svg>
-            Social
+          </button>
+        </h2>
+        <div
+          id="content-body-ramais"
+          class="hidden px-4"
+          aria-labelledby="content-heading-ramais"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <p class="text-main-dark">
+              Com encontros semanais buscamos conectar pessoas - umas com as
+              outras e com Deus. Nosso propósito é edificação, comunhão e
+              evangelismo.
+            </p>
           </div>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-social" class="hidden px-4" aria-labelledby="content-heading-social">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <p class="mb-2 text-main-dark">Justiça social está no âmago do Evangelho. Amar o próximo
-            implica buscar de alguma forma ser resposta de Deus às suas necessidades.
-          </p>
         </div>
-      </div>
 
-      <!-- Jovens -->
-      <h2 class="px-4" id="content-heading-youth">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-youth" aria-expanded="false" aria-controls="content-body-youth">
-          <div class="flex items-center">
-            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              class="bi bi-lightning-charge-fill w-6 h-6 shrink-0 mr-4">
+        <!-- Social -->
+        <h2 class="px-4" id="content-heading-social">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-social"
+            aria-expanded="false"
+            aria-controls="content-body-social"
+          >
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 shrink-0 mr-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z"
+                />
+              </svg>
+              Social
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
             </svg>
-            Jovens
+          </button>
+        </h2>
+        <div
+          id="content-body-social"
+          class="hidden px-4"
+          aria-labelledby="content-heading-social"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <p class="mb-2 text-main-dark">
+              Justiça social está no âmago do Evangelho. Amar o próximo implica
+              buscar de alguma forma ser resposta de Deus às suas necessidades.
+            </p>
           </div>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-youth" class="hidden px-4" aria-labelledby="content-heading-youth">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <p class="mb-2 text-main-dark">Nosso Ramal de Jovens busca a integração e envolvimento dos
-            solteiros na faixa de 20 a 40 anos nas atividades da igreja, bem como o comprometimento com o Reino de Deus.
-          </p>
         </div>
-      </div>
 
-      <!-- Crianças -->
-      <h2 class="px-4" id="content-heading-kids">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-kids" aria-expanded="false" aria-controls="content-body-kids">
-          <div class="flex items-center">
-            <svg class="w-6 h-6 shrink-0 mr-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 458.502 458.502"
-              xml:space="preserve">
-              <g>
+        <!-- Jovens -->
+        <h2 class="px-4" id="content-heading-youth">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-youth"
+            aria-expanded="false"
+            aria-controls="content-body-youth"
+          >
+            <div class="flex items-center">
+              <svg
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-lightning-charge-fill w-6 h-6 shrink-0 mr-4"
+              >
+                <path
+                  d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"
+                />
+              </svg>
+              Jovens
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="content-body-youth"
+          class="hidden px-4"
+          aria-labelledby="content-heading-youth"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <p class="mb-2 text-main-dark">
+              Nosso Ramal de Jovens busca a integração e envolvimento dos
+              solteiros na faixa de 20 a 40 anos nas atividades da igreja, bem
+              como o comprometimento com o Reino de Deus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Crianças -->
+        <h2 class="px-4" id="content-heading-kids">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-kids"
+            aria-expanded="false"
+            aria-controls="content-body-kids"
+          >
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 shrink-0 mr-4"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 458.502 458.502"
+                xml:space="preserve"
+              >
                 <g>
                   <g>
-                    <path d="M88.251,53.336c0,0.001-0.001,0.002-0.001,0.003c16.512,0,63.066,0.322,109.679,0.322c5.339,0,9.667-4.328,9.667-9.667
+                    <g>
+                      <path
+                        d="M88.251,53.336c0,0.001-0.001,0.002-0.001,0.003c16.512,0,63.066,0.322,109.679,0.322c5.339,0,9.667-4.328,9.667-9.667
 				c0-5.339-4.328-9.668-9.667-9.668h-28.156c-5.996-13.72-18.17-24.384-32.854-27.408C137.695,3.175,133.552,0,128.437,0
 				c-5.135,0-9.247,3.187-8.484,6.911c-19.724,4.061-34.932,21.912-36.703,42.425c-0.089,1.029,0.258,2.048,0.957,2.809
-				C85.456,53.506,86.859,53.336,88.251,53.336z" />
-                    <path d="M426.175,290.22c-0.341-0.87-36.24-87.426-48.664-123.581c-8.058-23.447-21.569-35.336-40.157-35.336H277.18
+				C85.456,53.506,86.859,53.336,88.251,53.336z"
+                      />
+                      <path
+                        d="M426.175,290.22c-0.341-0.87-36.24-87.426-48.664-123.581c-8.058-23.447-21.569-35.336-40.157-35.336H277.18
 				c-18.588,0-32.099,11.889-40.157,35.336c-4.663,13.569-11.538,32.888-18.339,51.813l-6.931-59.48
 				c-0.706-22.473-19.263-40.572-41.876-40.572c-3.349,0-78.122,0-81.699,0c-22.614,0-41.17,18.099-41.876,40.572L31.243,288.194
 				c-1.131,9.712,5.825,18.503,15.537,19.635c9.749,1.13,18.506-5.854,19.634-15.537C81.081,166.426,81.911,158.896,81.946,158.52
@@ -375,465 +572,727 @@
 				s20.841-9.331,20.841-20.841v-111.48c2.996,0,6.002,0,8.998,0v111.479c0,11.51,9.331,20.841,20.841,20.841
 				s20.841-9.331,20.841-20.841V325.777c5.025,0,9.513,0,13.252,0c2.882,0,5.613-1.289,7.446-3.513s2.574-5.151,2.026-7.981
 				l-23.87-120.715c0,0,37.737,106.908,38.687,109.332c3.502,8.931,13.58,13.33,22.509,9.829
-				C425.278,309.228,429.677,299.15,426.175,290.22z" />
-                    <path d="M253.206,87.659c6.907,0,12.938-3.679,16.291-9.173c2.158,20.53,19.519,36.53,40.62,36.53s38.462-16,40.62-36.53
+				C425.278,309.228,429.677,299.15,426.175,290.22z"
+                      />
+                      <path
+                        d="M253.206,87.659c6.907,0,12.938-3.679,16.291-9.173c2.158,20.53,19.519,36.53,40.62,36.53s38.462-16,40.62-36.53
 				c3.353,5.493,9.384,9.173,16.291,9.173c10.545,0,18.61,0.967,25.861,17.885c13.535-26.863-9.184-56.072-25.861-56.072
 				c-8.232,0-15.226,5.219-17.908,12.521c-5.181-16.614-20.683-28.674-39.003-28.674c-18.32,0-33.823,12.06-39.003,28.674
 				c-2.682-7.302-9.676-12.521-17.908-12.521c-16.677,0-39.395,29.209-25.861,56.072C234.594,88.626,242.659,87.659,253.206,87.659z
-				" />
-                    <path
-                      d="M128.437,101.482c18.368,0,33.903-12.125,39.042-28.807H89.394C94.534,89.357,110.068,101.482,128.437,101.482z" />
+				"
+                      />
+                      <path
+                        d="M128.437,101.482c18.368,0,33.903-12.125,39.042-28.807H89.394C94.534,89.357,110.068,101.482,128.437,101.482z"
+                      />
+                    </g>
                   </g>
                 </g>
-              </g>
-            </svg>
+              </svg>
 
-            Crianças
-          </div>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-kids" class="hidden px-4" aria-labelledby="content-heading-kids">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <p class="mb-2 text-main-dark">Nosso ministério infantil busca em Deus a conversão do
-            coração dos pais aos seus filhos e dos filhos aos seus pais. Essa é a promessa de Deus para esse tempo.
-          </p>
-        </div>
-      </div>
-
-      <!-- Missões -->
-      <h2 class="px-4" id="content-heading-mission">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-mission" aria-expanded="false" aria-controls="content-body-mission">
-          <div class="flex items-center">
-            <svg fill="currentColor" class="w-6 h-6 shrink-0 mr-4" viewBox="0 0 36 36"
-              preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>world-solid</title>
-              <path d="M10.05,18a20.46,20.46,0,0,0,.62,4.93h6.48V13.45H10.58A20.55,20.55,0,0,0,10.05,18Z"
-                class="clr-i-solid clr-i-solid-path-1"></path>
-              <path d="M18.85,13.45v9.48h6.48A20.46,20.46,0,0,0,26,18a20.55,20.55,0,0,0-.52-4.55Z"
-                class="clr-i-solid clr-i-solid-path-2"></path>
+              Crianças
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2ZM30.22,24.71H26.6a21.8,21.8,0,0,1-3,6,13.86,13.86,0,0,1-3,.92,20.21,20.21,0,0,0,4.18-6.94H18.86v7.15c-.29,0-.57,0-.86,0s-.55,0-.83,0V24.71H11.22a20.21,20.21,0,0,0,4.18,6.95,13.86,13.86,0,0,1-2.94-.9,21.8,21.8,0,0,1-3-6.05H5.78a13.94,13.94,0,0,1-.83-1.81h4A22.2,22.2,0,0,1,8.37,18a21.88,21.88,0,0,1,.48-4.55H4.76a13.88,13.88,0,0,1,.76-1.81H9.33A22.26,22.26,0,0,1,12.61,5a13.86,13.86,0,0,1,2.87-.84,20.13,20.13,0,0,0-4.4,7.45h6.09V4c.28,0,.55,0,.83,0s.58,0,.86,0v7.64h6.09a20.13,20.13,0,0,0-4.39-7.44A13.89,13.89,0,0,1,23.43,5a22.26,22.26,0,0,1,3.27,6.59h3.77a13.89,13.89,0,0,1,.76,1.81H27.17A21.88,21.88,0,0,1,27.66,18a22.2,22.2,0,0,1-.57,4.93h4A13.94,13.94,0,0,1,30.22,24.71Z"
-                class="clr-i-solid clr-i-solid-path-3"></path>
-              <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
-            </svg> Missões
-          </div>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-mission" class="hidden px-4" aria-labelledby="content-heading-mission">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <p class="mb-2 text-main-dark">De Jerusalém aos confins da Terra. Nada menos que isso. Nosso
-            compromisso é alcançar e abençoar todo aquele que ainda não teve um encontro transformador com Jesus, onde
-            quer que estejam.
-          </p>
-        </div>
-      </div>
-
-      <!-- Conheça Jesus -->
-      <h2 class="px-4" id="content-heading-jesus">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
-          data-accordion-target="#content-body-jesus" aria-expanded="false" aria-controls="content-body-jesus"
-          id="content-trigger-jesus">
-          <div class="flex items-center">
-            <svg fill="currentColor" class="w-6 h-6 shrink-0 mr-4" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <polygon
-                points="36.5,13 36.5,0 23.5,0 23.5,13 8.5,13 8.5,26 23.5,26 23.5,60 36.5,60 36.5,26 51.5,26 51.5,13 " />
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
             </svg>
-            Conhecendo Jesus
+          </button>
+        </h2>
+        <div
+          id="content-body-kids"
+          class="hidden px-4"
+          aria-labelledby="content-heading-kids"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <p class="mb-2 text-main-dark">
+              Nosso ministério infantil busca em Deus a conversão do coração dos
+              pais aos seus filhos e dos filhos aos seus pais. Essa é a promessa
+              de Deus para esse tempo.
+            </p>
           </div>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="content-body-jesus" class="hidden px-4" aria-labelledby="content-heading-jesus">
-        <div class="py-5 font-light border-b text-lg text-justify border-gray-200">
-          <ol class="text-main-light list-none">
-            <li class="mb-4">
-              <h3 class="font-medium text-main-dark mb-2">1 - Deus te ama e tem um plano para sua vida</h3>
-              <div class="px-4">
-                <p class="mb-2">
-                  O amor de Deus: <em>
-                    "Pois Deus tanto amou o mundo que deu o seu Filho unigênito para que todo o que nele crer não
-                    pereça,
-                    mas tenha a vida eterna."
-                  </em> (João 3:16)
-                </p>
+        </div>
 
-                <p class="mb-2">
-                  O plano de Deus: Cristo afirma: <em>"Eu vim para que tenham vida, e a tenham plenamente"</em> (uma
-                  vida abundante e com
-                  propósito). (João 10:10)
-                </p>
+        <!-- Missões -->
+        <h2 class="px-4" id="content-heading-mission">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-mission"
+            aria-expanded="false"
+            aria-controls="content-body-mission"
+          >
+            <div class="flex items-center">
+              <svg
+                fill="currentColor"
+                class="w-6 h-6 shrink-0 mr-4"
+                viewBox="0 0 36 36"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>world-solid</title>
+                <path
+                  d="M10.05,18a20.46,20.46,0,0,0,.62,4.93h6.48V13.45H10.58A20.55,20.55,0,0,0,10.05,18Z"
+                  class="clr-i-solid clr-i-solid-path-1"
+                ></path>
+                <path
+                  d="M18.85,13.45v9.48h6.48A20.46,20.46,0,0,0,26,18a20.55,20.55,0,0,0-.52-4.55Z"
+                  class="clr-i-solid clr-i-solid-path-2"
+                ></path>
+                <path
+                  d="M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2ZM30.22,24.71H26.6a21.8,21.8,0,0,1-3,6,13.86,13.86,0,0,1-3,.92,20.21,20.21,0,0,0,4.18-6.94H18.86v7.15c-.29,0-.57,0-.86,0s-.55,0-.83,0V24.71H11.22a20.21,20.21,0,0,0,4.18,6.95,13.86,13.86,0,0,1-2.94-.9,21.8,21.8,0,0,1-3-6.05H5.78a13.94,13.94,0,0,1-.83-1.81h4A22.2,22.2,0,0,1,8.37,18a21.88,21.88,0,0,1,.48-4.55H4.76a13.88,13.88,0,0,1,.76-1.81H9.33A22.26,22.26,0,0,1,12.61,5a13.86,13.86,0,0,1,2.87-.84,20.13,20.13,0,0,0-4.4,7.45h6.09V4c.28,0,.55,0,.83,0s.58,0,.86,0v7.64h6.09a20.13,20.13,0,0,0-4.39-7.44A13.89,13.89,0,0,1,23.43,5a22.26,22.26,0,0,1,3.27,6.59h3.77a13.89,13.89,0,0,1,.76,1.81H27.17A21.88,21.88,0,0,1,27.66,18a22.2,22.2,0,0,1-.57,4.93h4A13.94,13.94,0,0,1,30.22,24.71Z"
+                  class="clr-i-solid clr-i-solid-path-3"
+                ></path>
+                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+              </svg>
+              Missões
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="content-body-mission"
+          class="hidden px-4"
+          aria-labelledby="content-heading-mission"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <p class="mb-2 text-main-dark">
+              De Jerusalém aos confins da Terra. Nada menos que isso. Nosso
+              compromisso é alcançar e abençoar todo aquele que ainda não teve
+              um encontro transformador com Jesus, onde quer que estejam.
+            </p>
+          </div>
+        </div>
 
-                <p class="mb-2">
-                  Por que a maioria das pessoas não está experimentando essa "vida abundante"? Porque…
-                </p>
-              </div>
-            </li>
-            <li class="mb-4">
-              <h3 class="font-medium text-main-dark mb-2">2 - O homem pecador está longe de Deus e dO seu amor e plano
-              </h3>
-              <div class="px-4">
-                <p class="mb-2">
-                  O homem é pecador: <em>"Pois todos pecaram e estão destituídos da glória de Deus..."</em> (Romanos
-                  3:23)
-                </p>
+        <!-- Conheça Jesus -->
+        <h2 class="px-4" id="content-heading-jesus">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full py-5 font-medium text-center text-2xl text-main-dark border-b border-gray-200 md:hover:text-main-light transition-colors duration-300"
+            data-accordion-target="#content-body-jesus"
+            aria-expanded="false"
+            aria-controls="content-body-jesus"
+            id="content-trigger-jesus"
+          >
+            <div class="flex items-center">
+              <svg
+                fill="currentColor"
+                class="w-6 h-6 shrink-0 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 60 60"
+                style="enable-background: new 0 0 60 60"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="36.5,13 36.5,0 23.5,0 23.5,13 8.5,13 8.5,26 23.5,26 23.5,60 36.5,60 36.5,26 51.5,26 51.5,13 "
+                />
+              </svg>
+              Conhecendo Jesus
+            </div>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="content-body-jesus"
+          class="hidden px-4"
+          aria-labelledby="content-heading-jesus"
+        >
+          <div
+            class="py-5 font-light border-b text-lg text-justify border-gray-200"
+          >
+            <ol class="text-main-light list-none">
+              <li class="mb-4">
+                <h3 class="font-medium text-main-dark mb-2">
+                  1 - Deus te ama e tem um plano para sua vida
+                </h3>
+                <div class="px-4">
+                  <p class="mb-2">
+                    O amor de Deus:
+                    <em>
+                      "Pois Deus tanto amou o mundo que deu o seu Filho
+                      unigênito para que todo o que nele crer não pereça, mas
+                      tenha a vida eterna."
+                    </em>
+                    (João 3:16)
+                  </p>
 
-                <p class="mb-2">
-                  O homem foi criado para ter um relacionamento perfeito com Deus, mas por causa de sua desobediência e
-                  rebeldia, escolheu seguir o seu próprio caminho, e seu relacionamento com Deus desfez-se. Este estado
-                  de
-                  independência de Deus, caracterizado por uma atitude de rebelião ou indiferença, é evidência do que a
-                  Bíblia chama de pecado.
-                </p>
+                  <p class="mb-2">
+                    O plano de Deus: Cristo afirma:
+                    <em
+                      >"Eu vim para que tenham vida, e a tenham plenamente"</em
+                    >
+                    (uma vida abundante e com propósito). (João 10:10)
+                  </p>
 
-                <p class="mb-2">
-                  O homem está separado: <em>"Pois o salário do pecado é a morte..."</em> (separação espiritual de Deus)
-                  (Romanos 6:23)
-                </p>
+                  <p class="mb-2">
+                    Por que a maioria das pessoas não está experimentando essa
+                    "vida abundante"? Porque…
+                  </p>
+                </div>
+              </li>
+              <li class="mb-4">
+                <h3 class="font-medium text-main-dark mb-2">
+                  2 - O homem pecador está longe de Deus e dO seu amor e plano
+                </h3>
+                <div class="px-4">
+                  <p class="mb-2">
+                    O homem é pecador:
+                    <em
+                      >"Pois todos pecaram e estão destituídos da glória de
+                      Deus..."</em
+                    >
+                    (Romanos 3:23)
+                  </p>
 
-                <p class="mb-2">
-                  Deus é santo e o homem é pecador. Um grande abismo separa os dois. O homem está continuamente
-                  procurando
-                  alcançar a Deus e a vida abundante através dos seus próprios esforços: vida reta, boas obras,
-                  religião,
-                  filosofias, etc.
-                </p>
+                  <p class="mb-2">
+                    O homem foi criado para ter um relacionamento perfeito com
+                    Deus, mas por causa de sua desobediência e rebeldia,
+                    escolheu seguir o seu próprio caminho, e seu relacionamento
+                    com Deus desfez-se. Este estado de independência de Deus,
+                    caracterizado por uma atitude de rebelião ou indiferença, é
+                    evidência do que a Bíblia chama de pecado.
+                  </p>
 
-                <p class="mb-2">
-                  A Terceira Lei nos mostra a única resposta para o problema dessa separação...
-                </p>
-              </div>
-            </li>
-            <li class="mb-4">
-              <h3 class="font-medium text-main-dark mb-2">3 - Jesus é a solução de Deus para o pecado</h3>
-              <div class="px-4">
-                <p class="mb-2">
-                  Ele morreu em nosso lugar: <em>
-                    "Mas Deus demonstra seu amor por nós pelo fato de ter Cristo morrido em nosso favor, quando ainda
-                    éramos
-                    pecadores."
-                  </em> (Romanos 5:8)
-                </p>
+                  <p class="mb-2">
+                    O homem está separado:
+                    <em>"Pois o salário do pecado é a morte..."</em> (separação
+                    espiritual de Deus) (Romanos 6:23)
+                  </p>
 
-                <p class="mb-2">
-                  Ele ressuscitou dentre os mortos: <em>
-                    "Cristo morreu pelos nossos pecados... foi sepultado e ressuscitou ao terceiro dia, segundo as
-                    Escrituras... e apareceu a Pedro e depois aos Doze. Depois disso apareceu a mais de quinhentos..."
-                  </em> (1
-                  Coríntios 15:3-6)
-                </p>
+                  <p class="mb-2">
+                    Deus é santo e o homem é pecador. Um grande abismo separa os
+                    dois. O homem está continuamente procurando alcançar a Deus
+                    e a vida abundante através dos seus próprios esforços: vida
+                    reta, boas obras, religião, filosofias, etc.
+                  </p>
 
-                <p class="mb-2">
-                  Ele é o único caminho: <em>"Respondeu-lhe Jesus: Eu sou o caminho, a verdade e a vida. Ninguém vem ao
-                    Pai, a não ser por mim."</em>
-                  (João 14:6)
-                </p>
+                  <p class="mb-2">
+                    A Terceira Lei nos mostra a única resposta para o problema
+                    dessa separação...
+                  </p>
+                </div>
+              </li>
+              <li class="mb-4">
+                <h3 class="font-medium text-main-dark mb-2">
+                  3 - Jesus é a solução de Deus para o pecado
+                </h3>
+                <div class="px-4">
+                  <p class="mb-2">
+                    Ele morreu em nosso lugar:
+                    <em>
+                      "Mas Deus demonstra seu amor por nós pelo fato de ter
+                      Cristo morrido em nosso favor, quando ainda éramos
+                      pecadores."
+                    </em>
+                    (Romanos 5:8)
+                  </p>
 
-                <p class="mb-2">
-                  Deus tomou a iniciativa de ligar o abismo que nos separa Dele ao enviar seu Filho, Jesus Cristo, para
-                  morrer na cruz em nosso lugar, pagando o preço dos nossos pecados.
-                </p>
+                  <p class="mb-2">
+                    Ele ressuscitou dentre os mortos:
+                    <em>
+                      "Cristo morreu pelos nossos pecados... foi sepultado e
+                      ressuscitou ao terceiro dia, segundo as Escrituras... e
+                      apareceu a Pedro e depois aos Doze. Depois disso apareceu
+                      a mais de quinhentos..."
+                    </em>
+                    (1 Coríntios 15:3-6)
+                  </p>
 
-                <p class="mb-2">
-                  Mas não é suficiente conhecer essas três leis...
-                </p>
-              </div>
-            </li>
-            <li class="mb-4">
-              <h3 class="font-medium text-main-dark mb-2">4 - Para acessar essa solução, devemos receber a Jesus por um
-                convite pessoal</h3>
-              <div class="px-4">
-                <p class="mb-2">
-                  Precisamos receber a Cristo: <em>
-                    "Contudo, aos que o receberam, aos que creram em seu nome, deu-lhes o direito de se tornarem filhos
-                    de
-                    Deus."
-                  </em> (João 1:12)
-                </p>
+                  <p class="mb-2">
+                    Ele é o único caminho:
+                    <em
+                      >"Respondeu-lhe Jesus: Eu sou o caminho, a verdade e a
+                      vida. Ninguém vem ao Pai, a não ser por mim."</em
+                    >
+                    (João 14:6)
+                  </p>
 
-                <p class="mb-2">
-                  Recebemos a Cristo pela fé: <em>
-                    "Pois vocês são salvos pela graça, por meio da fé; e isto não vem de vocês, é dom de Deus; não por
-                    obras, para que ninguém se glorie"
-                  </em> (Efésios 2:8-9)
-                </p>
+                  <p class="mb-2">
+                    Deus tomou a iniciativa de ligar o abismo que nos separa
+                    Dele ao enviar seu Filho, Jesus Cristo, para morrer na cruz
+                    em nosso lugar, pagando o preço dos nossos pecados.
+                  </p>
 
-                <p class="mb-2">
-                  <em>Recebemos a Cristo por meio de um convite pessoal: Cristo afirma: "Eis que estou à porta e bato.
-                    Se alguém ouvir a minha voz e abrir a porta, entrarei..."</em>
-                  (Apocalipse 3:20)
-                </p>
+                  <p class="mb-2">
+                    Mas não é suficiente conhecer essas três leis...
+                  </p>
+                </div>
+              </li>
+              <li class="mb-4">
+                <h3 class="font-medium text-main-dark mb-2">
+                  4 - Para acessar essa solução, devemos receber a Jesus por um
+                  convite pessoal
+                </h3>
+                <div class="px-4">
+                  <p class="mb-2">
+                    Precisamos receber a Cristo:
+                    <em>
+                      "Contudo, aos que o receberam, aos que creram em seu nome,
+                      deu-lhes o direito de se tornarem filhos de Deus."
+                    </em>
+                    (João 1:12)
+                  </p>
 
-                <p class="mb-2">
-                  Receber a Cristo implica arrependimento, significa deixar de confiar em nossa capacidade para nos
-                  salvar, crendo que Cristo é o único que pode perdoar os nossos pecados. Não é suficiente crer
-                  intelectualmente que Jesus é o Filho de Deus e que morreu na cruz pelos nossos pecados ou ter uma
-                  experiência emocional. Recebemos a Cristo pela fé, através de uma decisão pessoal.
-                </p>
-              </div>
-            </li>
-          </ol>
+                  <p class="mb-2">
+                    Recebemos a Cristo pela fé:
+                    <em>
+                      "Pois vocês são salvos pela graça, por meio da fé; e isto
+                      não vem de vocês, é dom de Deus; não por obras, para que
+                      ninguém se glorie"
+                    </em>
+                    (Efésios 2:8-9)
+                  </p>
+
+                  <p class="mb-2">
+                    <em
+                      >Recebemos a Cristo por meio de um convite pessoal: Cristo
+                      afirma: "Eis que estou à porta e bato. Se alguém ouvir a
+                      minha voz e abrir a porta, entrarei..."</em
+                    >
+                    (Apocalipse 3:20)
+                  </p>
+
+                  <p class="mb-2">
+                    Receber a Cristo implica arrependimento, significa deixar de
+                    confiar em nossa capacidade para nos salvar, crendo que
+                    Cristo é o único que pode perdoar os nossos pecados. Não é
+                    suficiente crer intelectualmente que Jesus é o Filho de Deus
+                    e que morreu na cruz pelos nossos pecados ou ter uma
+                    experiência emocional. Recebemos a Cristo pela fé, através
+                    de uma decisão pessoal.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
+    <!-- MAP -->
+    <div
+      class="panel bg-sky-50 lg:h-auto text-main-dark lg:py-32 lg:items-center"
+      id="map"
+    >
+      <h1 class="text-center text-3xl font-bold uppercase lg:my-8">
+        Onde Estamos
+      </h1>
 
-  <!-- MAP -->
-  <div class="panel bg-sky-50 lg:h-auto text-main-dark lg:py-32 lg:items-center" id="map">
-    <h1 class="text-center text-3xl font-bold uppercase lg:my-8">
-      Onde Estamos
-    </h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9831346962746!2d-49.07390598432205!3d-22.316477585315216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67a6efc89a7b%3A0x669d553c51b4de03!2sIgreja%20Apost%C3%B3lica%20Bereana!5e0!3m2!1spt-BR!2sbr!4v1658340970189!5m2!1spt-BR!2sbr"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full h-48 lg:w-1/2 lg:h-[30rem] lg:my-8"
+      ></iframe>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9831346962746!2d-49.07390598432205!3d-22.316477585315216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67a6efc89a7b%3A0x669d553c51b4de03!2sIgreja%20Apost%C3%B3lica%20Bereana!5e0!3m2!1spt-BR!2sbr!4v1658340970189!5m2!1spt-BR!2sbr"
-      style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      class="w-full h-48 lg:w-1/2 lg:h-[30rem] lg:my-8"></iframe>
+      <p class="text-center lg:text-2xl lg:max-w-prose lg:text-justify lg:my-8">
+        Rua Antônio Alves, 4-50, Centro, Bauru, SP
+      </p>
 
-    <p class="text-center lg:text-2xl lg:max-w-prose lg:text-justify lg:my-8">
-      Rua Antônio Alves, 4-50, Centro, Bauru, SP
-    </p>
-
-    <h2 class="text-center font-bold lg:text-3xl lg:max-w-prose lg:text-justify">
-      Cultos
-    </h2>
-    <p class="text-center lg:text-2xl lg:max-w-prose lg:text-justify lg:my-8">
-      Domingo, 18:00h
-    </p>
-  </div>
-
-  <!-- CONTACT -->
-  <div
-    class="panel bg-highlight-dark bg-contact-panel img-bg text-sky-100 lg:items-center min-h-screen h-auto lg:py-16"
-    id="contact">
-    <h1 class="text-center text-3xl font-bold uppercase lg:text-justify lg:mb-8">
-      Entre em contato
-    </h1>
-
-    <section class="bg-sky-50 rounded-md">
-      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <form id="contactForm" class="lg:w-[42rem] grid grid-cols-12 gap-4">
-          <div class="col-span-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-main-dark">Email</label>
-            <input type="email" id="email" name="email"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="nome@email.com" required>
-          </div>
-          <div class="col-span-6">
-            <label for="phone" class="block mb-2 text-sm font-medium text-main-dark">Telefone/Whatsapp</label>
-            <input type="phone" id="phone" name="phone"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="(11) 59272-9070" required>
-          </div>
-          <div class="col-span-6">
-            <label for="church" class="block mb-2 text-sm font-medium text-main-dark">Igreja</label>
-            <input type="church" id="church" name="church"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="Igreja">
-          </div>
-          <div class="col-span-6">
-            <label for="city" class="block mb-2 text-sm font-medium text-main-dark">Cidade</label>
-            <input type="city" id="city" name="city"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="Bauru">
-          </div>
-          <div class="col-span-12">
-            <label for="subject" class="block mb-2 text-sm font-medium text-main-dark">Assunto</label>
-            <input type="text" id="subject" name="subject"
-              class="block p-3 w-full text-sm text-main-dark bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-              placeholder="Em que podemos te ajudar?" required>
-          </div>
-          <div class="col-span-12">
-            <label for="message" class="block mb-2 text-sm font-medium text-main-dark">Sua mensagem</label>
-            <textarea id="message" rows="6" name="message"
-              class="block p-2.5 w-full text-sm text-main-dark bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
-              placeholder="Deixe um comentário..."
-              required></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-main-dark sm:w-fit hover:bg-main-light focus:ring-4 focus:outline-none focus:ring-primary-300">
-            Enviar
-          </button>
-        </form>
-      </div>
-    </section>
-  </div>
-
-  <!-- HISTORY -->
-  <div
-    class="p-4 md:p-8 w-full min-h-screen flex flex-col justify-evenly bg-sky-50 lg:h-auto lg:py-32 text-main-dark lg:items-center"
-    id="history">
-    <h1 class="text-center text-3xl font-bold uppercase mb-8 mt-32 lg:my-8">
-      Nossa História
-    </h1>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      Nascemos no ano de 1934, como a terceira igreja evangélica da cidade.
-      Quando aqueles cerca de 20 irmãos, saídos da Primeira Igreja Batista
-      organizaram-se, certamente não imaginavam como seria a história daquela
-      que seria organizada como Segunda Igreja Batista de Bauru. Mas Deus
-      estava no negócio. Com muitas lutas, mas também muita vontade de
-      crescer, avançamos e, de um primeiro local de culto na esquina das ruas
-      Azarias Leite com Rodrigues Alves, nos mudamos para a Rua Cussy Júnior,
-      4-28, onde permanecemos por 62 anos. Muitos foram os obreiros que
-      passaram pela Igreja e diversas foram as formas pelas quais marcaram
-      nossa história.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      Ali tivemos experiências marcantes com Deus, que mudaram nossa história
-      para sempre. Como não lembrar o dia 27 de Novembro de 1994, quando fomos
-      surpreendidos pelo Espírito Santo, naquela manhã de domingo? Ali
-      começava o mover de Deus em nosso meio, e que tem se intensificado até
-      hoje.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      E foi no dia 4 de fevereiro seguinte (1995) que Deus, pela primeira vez,
-      trouxe uma palavra profética sobre a cidade de Bauru - Deus tem
-      interesse especial nessa cidade e a usará no processo de promover um
-      avivamento na nação brasileira. Esta é a cidade do Espírito Santo, lugar
-      de Sua morada, de Sua permanência.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      Um dos grandes momentos, e que marcou profundamente nossa história,
-      ocorreu no ano de 1997. Quando sonhávamos em adquirir outro imóvel para
-      nos reunirmos, o Senhor nos desafiou a dar todos os nossos recursos para
-      Missões, pois Ele nos daria o novo templo de graça. E porque decidimos
-      obedecer e dar o passo de fé, no dia 11 de outubro de 1997 inauguramos
-      nosso novo templo, aqui mesmo no 4-50 da Rua Antonio Alves. Aqui, nesse
-      novo local, experimentamos momentos extraordinários com Deus.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      O Senhor nos tem conduzido de forma poderosa na direção de nosso
-      chamado. Temos buscado caminhar no ministério apostólico ao lado do Ap
-      Maurício Cundari Marques, com quem temos vivido tempos especiais de
-      aprendizado.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      Nosso foco tem sido a busca pela Presença Manifesta de Deus, a ênfase na
-      vida devocional, e o clamor por um novo derramar do Espírito Santo que
-      resulte uma nova Reforma que mude a história da nossa cidade, fazendo
-      com que a identidade de Bauru e a nossa se fundam - Lugar da Presença
-      Manifesta Permanente do Espírito Santo.
-    </p>
-
-    <p class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify">
-      Cremos que estamos vivendo tempos especiais que antecedem um grande
-      mover do Espírito Santo sobre a terra. Um grande avivamento está às
-      portas.
-    </p>
-  </div>
-
-  <!-- LINKS -->
-  <div class="panel bg-main-light bg-links-panel img-bg items-center lg:h-[42rem] lg:py-16" id="links">
-    <h1 class="text-center text-sky-100 text-3xl font-bold uppercase">
-      Nos encontre em
-    </h1>
-
-    <div class="grid grid-cols-2 gap-8 lg:grid-cols-3">
-      <!-- IG -->
-      <a href="https://www.instagram.com/iabereana/" class="relative inline-block group" target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">Instagram</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z" />
-        </svg>
-      </a>
-
-      <!-- FB -->
-      <a href="https://www.facebook.com/iabereana" class="relative inline-block group" target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">Facebook</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
-        </svg>
-      </a>
-
-      <!-- YT -->
-      <a href="https://www.youtube.com/c/IgrejaApost%C3%B3licaBereana" class="relative inline-block group"
-        target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">Youtube</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z" />
-        </svg>
-      </a>
-
-      <a href="https://twitter.com/iabereana/" class="relative inline-block group" target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">Twitter</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM727.3 401.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z" />
-        </svg>
-      </a>
-
-      <!-- Android -->
-      <a href="https://play.google.com/store/apps/details?id=br.com.inchurch.apostbereana"
-        class="relative inline-block group" id="android-link" target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">Play
-          Store</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M270.1 741.7c0 23.4 19.1 42.5 42.6 42.5h48.7v120.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V784.1h85v120.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V784.1h48.7c23.5 0 42.6-19.1 42.6-42.5V346.4h-486v395.3zm357.1-600.1l44.9-65c2.6-3.8 2-8.9-1.5-11.4-3.5-2.4-8.5-1.2-11.1 2.6l-46.6 67.6c-30.7-12.1-64.9-18.8-100.8-18.8-35.9 0-70.1 6.7-100.8 18.8l-46.6-67.5c-2.6-3.8-7.6-5.1-11.1-2.6-3.5 2.4-4.1 7.4-1.5 11.4l44.9 65c-71.4 33.2-121.4 96.1-127.8 169.6h486c-6.6-73.6-56.7-136.5-128-169.7zM409.5 244.1a26.9 26.9 0 1 1 26.9-26.9 26.97 26.97 0 0 1-26.9 26.9zm208.4 0a26.9 26.9 0 1 1 26.9-26.9 26.97 26.97 0 0 1-26.9 26.9zm223.4 100.7c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V400.1c.1-30.6-24.3-55.3-54.6-55.3zm-658.6 0c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V400.1c0-30.6-24.5-55.3-54.6-55.3z" />
-        </svg>
-      </a>
-
-      <!-- Apple -->
-      <a href="https://apps.apple.com/br/app/bereana-igreja-apost%C3%B3lica/id1514257476"
-        class="relative inline-block group px-[25%] lg:px-0" id="apple-link" target="_blank">
-        <span
-          class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500">App
-          Store</span>
-        <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-          class="icon fill-sky-100 h-24 w-24 lg:h-44 lg:w-44 hover:fill-sky-100/75 hover:transition-all hover:duration-500">
-          <path
-            d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z" />
-        </svg>
-      </a>
+      <h2
+        class="text-center font-bold lg:text-3xl lg:max-w-prose lg:text-justify"
+      >
+        Cultos
+      </h2>
+      <p class="text-center lg:text-2xl lg:max-w-prose lg:text-justify lg:my-8">
+        Domingo, 18:00h
+      </p>
     </div>
-  </div>
 
-  <script src="/src/main.js"></script>
-  <script src="/node_modules/flowbite/dist/flowbite.js"></script>
-  <script src="https://s.electricblaze.com/widget.js" defer></script>
-</body>
+    <!-- CONTACT -->
+    <div
+      class="panel bg-highlight-dark bg-contact-panel img-bg text-sky-100 lg:items-center min-h-screen h-auto lg:py-16"
+      id="contact"
+    >
+      <h1
+        class="text-center text-3xl font-bold uppercase lg:text-justify lg:mb-8"
+      >
+        Entre em contato
+      </h1>
 
+      <section class="bg-sky-50 rounded-md">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <form id="contactForm" class="lg:w-[42rem] grid grid-cols-12 gap-4">
+            <div class="col-span-6">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="nome@email.com"
+                required
+              />
+            </div>
+            <div class="col-span-6">
+              <label
+                for="phone"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Telefone/Whatsapp</label
+              >
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="(11) 59272-9070"
+                required
+              />
+            </div>
+            <div class="col-span-6">
+              <label
+                for="church"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Igreja</label
+              >
+              <input
+                type="church"
+                id="church"
+                name="church"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="Igreja"
+              />
+            </div>
+            <div class="col-span-6">
+              <label
+                for="city"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Cidade</label
+              >
+              <input
+                type="city"
+                id="city"
+                name="city"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="Bauru"
+              />
+            </div>
+            <div class="col-span-12">
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Assunto</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="block p-3 w-full text-sm text-main-dark bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Em que podemos te ajudar?"
+                required
+              />
+            </div>
+            <div class="col-span-12">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-main-dark"
+                >Sua mensagem</label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                name="message"
+                class="block p-2.5 w-full text-sm text-main-dark bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Deixe um comentário..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-main-dark sm:w-fit hover:bg-main-light focus:ring-4 focus:outline-none focus:ring-primary-300"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- HISTORY -->
+    <div
+      class="p-4 md:p-8 w-full min-h-screen flex flex-col justify-evenly bg-sky-50 lg:h-auto lg:py-32 text-main-dark lg:items-center"
+      id="history"
+    >
+      <h1 class="text-center text-3xl font-bold uppercase mb-8 mt-32 lg:my-8">
+        Nossa História
+      </h1>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        Nascemos no ano de 1934, como a terceira igreja evangélica da cidade.
+        Quando aqueles cerca de 20 irmãos, saídos da Primeira Igreja Batista
+        organizaram-se, certamente não imaginavam como seria a história daquela
+        que seria organizada como Segunda Igreja Batista de Bauru. Mas Deus
+        estava no negócio. Com muitas lutas, mas também muita vontade de
+        crescer, avançamos e, de um primeiro local de culto na esquina das ruas
+        Azarias Leite com Rodrigues Alves, nos mudamos para a Rua Cussy Júnior,
+        4-28, onde permanecemos por 62 anos. Muitos foram os obreiros que
+        passaram pela Igreja e diversas foram as formas pelas quais marcaram
+        nossa história.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        Ali tivemos experiências marcantes com Deus, que mudaram nossa história
+        para sempre. Como não lembrar o dia 27 de Novembro de 1994, quando fomos
+        surpreendidos pelo Espírito Santo, naquela manhã de domingo? Ali
+        começava o mover de Deus em nosso meio, e que tem se intensificado até
+        hoje.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        E foi no dia 4 de fevereiro seguinte (1995) que Deus, pela primeira vez,
+        trouxe uma palavra profética sobre a cidade de Bauru - Deus tem
+        interesse especial nessa cidade e a usará no processo de promover um
+        avivamento na nação brasileira. Esta é a cidade do Espírito Santo, lugar
+        de Sua morada, de Sua permanência.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        Um dos grandes momentos, e que marcou profundamente nossa história,
+        ocorreu no ano de 1997. Quando sonhávamos em adquirir outro imóvel para
+        nos reunirmos, o Senhor nos desafiou a dar todos os nossos recursos para
+        Missões, pois Ele nos daria o novo templo de graça. E porque decidimos
+        obedecer e dar o passo de fé, no dia 11 de outubro de 1997 inauguramos
+        nosso novo templo, aqui mesmo no 4-50 da Rua Antonio Alves. Aqui, nesse
+        novo local, experimentamos momentos extraordinários com Deus.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        O Senhor nos tem conduzido de forma poderosa na direção de nosso
+        chamado. Temos buscado caminhar no ministério apostólico ao lado do Ap
+        Maurício Cundari Marques, com quem temos vivido tempos especiais de
+        aprendizado.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        Nosso foco tem sido a busca pela Presença Manifesta de Deus, a ênfase na
+        vida devocional, e o clamor por um novo derramar do Espírito Santo que
+        resulte uma nova Reforma que mude a história da nossa cidade, fazendo
+        com que a identidade de Bauru e a nossa se fundam - Lugar da Presença
+        Manifesta Permanente do Espírito Santo.
+      </p>
+
+      <p
+        class="text-center my-4 lg:text-2xl lg:max-w-prose lg:mb-8 lg:text-justify"
+      >
+        Cremos que estamos vivendo tempos especiais que antecedem um grande
+        mover do Espírito Santo sobre a terra. Um grande avivamento está às
+        portas.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div
+      class="panel bg-main-light bg-links-panel img-bg items-center h-auto lg:py-16"
+      id="links"
+    >
+      <h1
+        class="text-center text-sky-100 text-3xl font-bold uppercase lg:mb-16"
+      >
+        Nos encontre em
+      </h1>
+
+      <div class="grid grid-cols-2 gap-8 lg:grid-cols-6">
+        <!-- IG -->
+        <a
+          href="https://www.instagram.com/iabereana/"
+          class="relative inline-block group"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >Instagram</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+            />
+          </svg>
+        </a>
+
+        <!-- FB -->
+        <a
+          href="https://www.facebook.com/iabereana"
+          class="relative inline-block group"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >Facebook</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+            />
+          </svg>
+        </a>
+
+        <!-- YT -->
+        <a
+          href="https://www.youtube.com/c/IgrejaApost%C3%B3licaBereana"
+          class="relative inline-block group"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >Youtube</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://twitter.com/iabereana/"
+          class="relative inline-block group"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >Twitter</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM727.3 401.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z"
+            />
+          </svg>
+        </a>
+
+        <!-- Android -->
+        <a
+          href="https://play.google.com/store/apps/details?id=br.com.inchurch.apostbereana"
+          class="relative inline-block group"
+          id="android-link"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >Play Store</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M270.1 741.7c0 23.4 19.1 42.5 42.6 42.5h48.7v120.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V784.1h85v120.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V784.1h48.7c23.5 0 42.6-19.1 42.6-42.5V346.4h-486v395.3zm357.1-600.1l44.9-65c2.6-3.8 2-8.9-1.5-11.4-3.5-2.4-8.5-1.2-11.1 2.6l-46.6 67.6c-30.7-12.1-64.9-18.8-100.8-18.8-35.9 0-70.1 6.7-100.8 18.8l-46.6-67.5c-2.6-3.8-7.6-5.1-11.1-2.6-3.5 2.4-4.1 7.4-1.5 11.4l44.9 65c-71.4 33.2-121.4 96.1-127.8 169.6h486c-6.6-73.6-56.7-136.5-128-169.7zM409.5 244.1a26.9 26.9 0 1 1 26.9-26.9 26.97 26.97 0 0 1-26.9 26.9zm208.4 0a26.9 26.9 0 1 1 26.9-26.9 26.97 26.97 0 0 1-26.9 26.9zm223.4 100.7c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V400.1c.1-30.6-24.3-55.3-54.6-55.3zm-658.6 0c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4 30.2 0 54.6-24.8 54.6-55.4V400.1c0-30.6-24.5-55.3-54.6-55.3z"
+            />
+          </svg>
+        </a>
+
+        <!-- Apple -->
+        <a
+          href="https://apps.apple.com/br/app/bereana-igreja-apost%C3%B3lica/id1514257476"
+          class="relative inline-block group px-[25%] lg:px-0"
+          id="apple-link"
+          target="_blank"
+        >
+          <span
+            class="hidden lg:block invisible absolute w-48 -bottom-6 left-1/2 -ml-24 text-center text-sky-100 font-bold text-2xl opacity-0 group-hover:opacity-100 group-hover:visible z-10 uppercase group-hover:transition-opacity group-hover:duration-500"
+            >App Store</span
+          >
+          <svg
+            width="1024px"
+            height="1024px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon fill-sky-100 h-24 w-24 lg:h-36 lg:w-36 hover:fill-sky-100/75 hover:transition-all hover:duration-500"
+          >
+            <path
+              d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <script src="/src/main.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://s.electricblaze.com/widget.js" defer></script>
+  </body>
 </html>
