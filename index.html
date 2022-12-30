@@ -634,38 +634,38 @@
 
     <section class="bg-sky-50 rounded-md">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <form action="#" class="space-y-8 lg:w-[42rem]">
-          <div class="mb-4">
+        <form action="#" class="lg:w-[42rem] grid grid-cols-12 gap-4">
+          <div class="col-span-6">
             <label for="email" class="block mb-2 text-sm font-medium text-main-dark">Email</label>
             <input type="email" id="email"
               class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               placeholder="nome@email.com" required>
           </div>
-          <div class="mb-4">
-            <label for="phone" class="block mb-2 text-sm font-medium text-main-dark">Telefone</label>
+          <div class="col-span-6">
+            <label for="phone" class="block mb-2 text-sm font-medium text-main-dark">Telefone/Whatsapp</label>
             <input type="phone" id="phone"
               class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               placeholder="(11) 59272-9070" required>
           </div>
-          <div class="mb-4">
+          <div class="col-span-6">
             <label for="church" class="block mb-2 text-sm font-medium text-main-dark">Igreja</label>
             <input type="church" id="church"
               class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               placeholder="Igreja">
           </div>
-          <div class="mb-4">
+          <div class="col-span-6">
             <label for="city" class="block mb-2 text-sm font-medium text-main-dark">Cidade</label>
             <input type="city" id="city"
               class="shadow-sm bg-gray-50 border border-gray-300 text-main-dark text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               placeholder="Bauru">
           </div>
-          <div class="mb-4">
+          <div class="col-span-12">
             <label for="subject" class="block mb-2 text-sm font-medium text-main-dark">Assunto</label>
             <input type="text" id="subject"
               class="block p-3 w-full text-sm text-main-dark bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
               placeholder="Em que podemos te ajudar?" required>
           </div>
-          <div class="sm:col-span-2">
+          <div class="col-span-12">
             <label for="message" class="block mb-2 text-sm font-medium text-main-dark">Sua mensagem</label>
             <textarea id="message" rows="6"
               class="block p-2.5 w-full text-sm text-main-dark bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
