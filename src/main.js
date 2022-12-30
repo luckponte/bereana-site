@@ -32,8 +32,22 @@ window.addEventListener("load", () => {
   const form = document.querySelector("#contactForm");
   function handleContact() {
     const formData = new FormData(form);
+    const body = `
+  Informações de Contato
+      
+      Email:    ${formData.get("email")}
+      Telefone: ${formData.get("phone")}
+      Igreja:   ${formData.get("church")}
+      Cidade:   ${formData.get("city")}
+      
+  Mensagem
+      
+      ${formData.get("message")}
+    `;
     window.open(
-      `mailto:luck.ponte.correia@gmail.com?subject=${formData.get("subject")}`,
+      `mailto:luck.ponte.correia@gmail.com?subject=Contato Site - ${formData.get(
+        "subject"
+      )}&body=${encodeURI(body)}`,
       "_self"
     );
   }
