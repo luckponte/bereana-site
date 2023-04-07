@@ -1,7 +1,27 @@
 window.addEventListener("load", () => {
-  // know jesus
+  // know jesus accordion and modal
   document.querySelector("#know-jesus").addEventListener("click", (e) => {
     document.querySelector("#content-trigger-jesus").click();
+  });
+
+  const knowJesusModalElement = document.querySelector("#knowJesusModal");
+  const knowJesusModalOpenElements = document.querySelectorAll(
+    "[data-modal-show='knowJesusModal']"
+  );
+  const knowJesusModalCloseElements = document.querySelectorAll(
+    "[data-modal-hide='knowJesusModal']"
+  );
+
+  knowJesusModalCloseElements.forEach((el) => {
+    el.addEventListener("click", (_) => {
+      knowJesusModalElement.classList.add("hidden");
+    });
+  });
+
+  knowJesusModalOpenElements.forEach((el) => {
+    el.addEventListener("click", (_) => {
+      knowJesusModalElement.classList.remove("hidden");
+    });
   });
 
   // control mobile menu functions
