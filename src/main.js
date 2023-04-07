@@ -76,4 +76,12 @@ window.addEventListener("load", () => {
     e.preventDefault();
     handleContact();
   });
+
+  //Remove IG embbed ad
+  const electricBlazeAnchors = document.querySelectorAll(
+    'a[class^="electricblaze"]'
+  );
+  electricBlazeAnchors.forEach((el) => {
+    el.remove();
+  });
 });
