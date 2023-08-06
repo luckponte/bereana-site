@@ -79,8 +79,9 @@ window.addEventListener("load", () => {
 
   //Remove IG embbed ad
   const electricBlazeAnchors = document.querySelectorAll(
-    'a[class^="electricblaze"]'
+    'a[href^="https://electricblaze"],a[href="#buy"]'
   );
+
   electricBlazeAnchors.forEach((el) => {
     el.remove();
   });
