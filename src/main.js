@@ -65,7 +65,7 @@ window.addEventListener("load", () => {
       ${formData.get("message")}
     `;
     window.open(
-      `mailto:luck.ponte.correia@gmail.com?subject=Contato Site - ${formData.get(
+      `mailto:contatobereana@gmail.com?subject=Contato Site - ${formData.get(
         "subject"
       )}&body=${encodeURI(body)}`,
       "_self"
